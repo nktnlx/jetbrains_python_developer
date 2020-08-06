@@ -6,7 +6,11 @@ The bot does the following simple tasks:
 - calculates your age using math magic;
 - counts numbers from ZERO to an INPUT number;
 - gives your a multiple-choice question about Python;
-- says good bye ..and misses you a lot!
+- says good bye ..and misses you a lot!  
+
+The code was created using Python 3.8  
+If your machine has an installed Python 3, you can run the code in terminal(command line) by typing: 
+$ python3 bot.py  
 
 
 
