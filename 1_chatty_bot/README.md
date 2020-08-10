@@ -1,15 +1,15 @@
 This is the very first project completed by me from JetBrains Python Developer track: https://hyperskill.org/tracks/2
 
-The bot does the following simple tasks:
-- greets you;
-- asks your name;
-- calculates your age using math magic;
-- counts numbers from ZERO to an INPUT number;
-- gives your a multiple-choice question about Python;
-- says good bye ..and misses you a lot!  
+The bot does the following simple tasks:  
+- greets you;  
+- asks your name;  
+- calculates your age using math magic;  
+- counts numbers from ZERO to an INPUT number;  
+- gives your a multiple-choice question about Python;  
+- says good bye ..and misses you a lot!     
 
 The code was created using Python 3.8  
-If your machine has an installed Python 3, you can run the code in terminal(command line) by typing: 
+If your machine has an installed Python 3, you can run the code in terminal(command line) by typing:   
 $ python3 bot.py  
 
 
