@@ -7,7 +7,7 @@ This repository is for completed projects from JetBrains Python Developer track:
 List of projects:
 1. Chatty Bot -- friendly asks you a bunch of questions, interacts with your input.  
 2. Zookeeper -- prints some ASCII art based on your choice.   
-3. Credit Calculator --  
+3. Credit Calculator -- calculates annuity or differentiate monthly payments, periods to repay a credit, overpayment and a credit principal based on the user input.    
 4. Hangman --  
 
 Hope this repo will help you to assess my coding skills or will be just fun for you to play with.  
