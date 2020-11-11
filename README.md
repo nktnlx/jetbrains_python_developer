@@ -2,7 +2,7 @@ Hi there!
 
 
 I'm intensively learning to code and interested in data science, aiming to be hired by the end of 2020.  
-This repository is for completed projects from JetBrains Python Developer track: https://hyperskill.org/tracks/2  
+This repository is for completed projects from [JetBrains Python Developer track](https://hyperskill.org/tracks/2)  
 
 List of projects:
 1. Chatty Bot -- friendly asks you a bunch of questions, interacts with your input.  
