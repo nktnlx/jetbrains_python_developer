@@ -58,7 +58,53 @@
 
 
 # STAGE 5
+# import random
+#
+# words_to_guess = ['python', 'java', 'kotlin', 'javascript']
+#
+# print(*'HANGMAN')
+#
+#
+# def guess(word):
+#     tries = 8
+#     letters = []
+#     index = []
+#
+#     while tries > 0:
+#         print('')
+#         for l in letters:
+#             start = 0
+#             c = 0
+#             while c < word.count(l):
+#                 index.append(word.find(l, start))
+#                 start = word.find(l, start) + 1
+#                 c += 1
+#
+#         for j in range(len(word)):
+#             if j in index:
+#                 print(word[j], end='')
+#             else:
+#                 print('-', end='')
+#
+#         print('')
+#         user_letter = (input('Input a letter: '))
+#         letters.append(user_letter)
+#         if user_letter not in word:
+#             print('That letter doesn\'t appear in the word')
+#
+#         tries -= 1
+#
+#     print('')
+#     print('''Thanks for playing!
+# We'll see how well you did in the next stage''')
+#
+#
+# guess(random.choice(words_to_guess))
+
+
+# STAGE 6
 import random
+import sys
 
 words_to_guess = ['python', 'java', 'kotlin', 'javascript']
 
@@ -72,13 +118,13 @@ def guess(word):
 
     while tries > 0:
         print('')
-        for l in letters:
+        for letter in letters:
             start = 0
-            c = 0
-            while c < word.count(l):
-                index.append(word.find(l, start))
-                start = word.find(l, start) + 1
-                c += 1
+            counter = 0
+            while counter < word.count(letter):
+                index.append(word.find(letter, start))
+                start = word.find(letter, start) + 1
+                counter += 1
 
         for j in range(len(word)):
             if j in index:
@@ -86,23 +132,30 @@ def guess(word):
             else:
                 print('-', end='')
 
+
+        if len(set(index)) == len(word):
+            print('')
+            print('''You guessed the word!
+You survived!''')
+            sys.exit(1)
+
         print('')
         user_letter = (input('Input a letter: '))
-        letters.append(user_letter)
         if user_letter not in word:
             print('That letter doesn\'t appear in the word')
+            tries -= 1
+            continue
+        elif user_letter in letters:
+            print('No improvements')
+            tries -= 1
+            continue
+        elif user_letter in word:
+            letters.append(user_letter)
 
-        tries -= 1
-
-    print('')
-    print('''Thanks for playing!
-We'll see how well you did in the next stage''')
+    print('You lost!')
 
 
 guess(random.choice(words_to_guess))
-
-
-
 
 
 
