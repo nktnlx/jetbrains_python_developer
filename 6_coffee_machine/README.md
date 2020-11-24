@@ -2,6 +2,19 @@ This is the forth project completed by me from [JetBrains Python Developer track
 
 Coffee Machine -- the project emulates an operation of a coffee machine. During the project I've practiced working with functions, loops and conditions. Also there was an intro to OOP, including: classes, instances, methods, attributes and magic methods.   
 
+An example of the script execution:  
+```
+Write how many ml of water the coffee machine has:
+1500
+Write how many ml of milk the coffee machine has:
+300
+Write how many grams of coffee beans the coffee machine has:
+115
+Write how many cups of coffee you will need:
+5
+Yes, I can make that amount of coffee (and even 1 more than that)
+
+```
 
 
 The code was created using Python 3.8  
