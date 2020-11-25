@@ -4,16 +4,24 @@ Coffee Machine -- the project emulates an operation of a coffee machine. During 
 
 An example of the script execution:  
 ```
-Write how many ml of water the coffee machine has:
-1500
-Write how many ml of milk the coffee machine has:
-300
-Write how many grams of coffee beans the coffee machine has:
-115
-Write how many cups of coffee you will need:
-5
-Yes, I can make that amount of coffee (and even 1 more than that)
+The coffee machine has:
+400 of water
+540 of milk
+120 of coffee beans
+9 of disposable cups
+550 of money
 
+Write action (buy, fill, take):
+buy
+What do you want to buy? 1 - espresso, 2 - latte, 3 - cappuccino:
+3
+
+The coffee machine has:
+200 of water
+440 of milk
+108 of coffee beans
+8 of disposable cups
+556 of money
 ```
 
 

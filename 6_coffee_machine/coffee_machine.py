@@ -24,47 +24,157 @@
 
 # STAGE 3
 # constants to brew one cup of coffee
-WATER = 200
-MILK = 50
-BEANS = 15
+# WATER = 200
+# MILK = 50
+# BEANS = 15
+#
+#
+# # entering data about coffee machine load with ingredients
+# def amount():
+#     """
+#     :rtype: tuple
+#     """
+#     water_available = int(input('Write how many ml of water the coffee machine has:\n'))
+#     milk_available = int(input('Write how many ml of milk the coffee machine has:\n'))
+#     beans_available = int(input('Write how many grams of coffee beans the coffee machine has:\n'))
+#
+#     return water_available, milk_available, beans_available
+#
+#
+# # logic beyond the machine making coffee
+# def making_coffee(water, milk, beans):
+#     cups_inp = int(input('Write how many cups of coffee you will need:\n'))
+#
+#     if water // WATER == cups_inp and milk // MILK == cups_inp and beans // BEANS >= 1:
+#         print('Yes, I can make that amount of coffee')
+#
+#     elif water == 0 and milk == 0 and beans == 0 and cups_inp == 0:
+#         print('Yes, I can make that amount of coffee')
+#
+#     elif water // WATER >= cups_inp and milk // MILK >= cups_inp and beans // BEANS >= 1:
+#         cups = min([water // WATER, milk // MILK, beans // BEANS])
+#         if cups == cups_inp:
+#             print('Yes, I can make that amount of coffee')
+#         else:
+#             print(f'Yes, I can make that amount of coffee (and even {cups - cups_inp} more than that)')
+#
+#     elif water // WATER < cups_inp and milk // MILK < cups_inp and beans // BEANS >= 1:
+#         cups = min([water // WATER, milk // MILK, beans // BEANS])
+#         print(f'No, I can make only {cups} cups of coffee')
+#
+#
+# water_in_machine, milk_in_machine, beans_in_machine = amount()
+# making_coffee(water_in_machine, milk_in_machine, beans_in_machine)
 
 
-# entering data about coffee machine load with ingredients
-def amount():
-    """
-    :rtype: tuple
-    """
-    water_available = int(input('Write how many ml of water the coffee machine has:\n'))
-    milk_available = int(input('Write how many ml of milk the coffee machine has:\n'))
-    beans_available = int(input('Write how many grams of coffee beans the coffee machine has:\n'))
+# STAGE 4
+# printing the current state of the coffee machine
+def status(water, milk, beans, cups, money):
+    print(f'''The coffee machine has:
+{water} of water
+{milk} of milk
+{beans} of coffee beans
+{cups} of disposable cups
+{money} of money''')
 
-    return water_available, milk_available, beans_available
-
-
-# logic beyond the machine making coffee
-def making_coffee(water, milk, beans):
-    cups_inp = int(input('Write how many cups of coffee you will need:\n'))
-
-    if water // WATER == cups_inp and milk // MILK == cups_inp and beans // BEANS >= 1:
-        print('Yes, I can make that amount of coffee')
-
-    elif water == 0 and milk == 0 and beans == 0 and cups_inp == 0:
-        print('Yes, I can make that amount of coffee')
-
-    elif water // WATER >= cups_inp and milk // MILK >= cups_inp and beans // BEANS >= 1:
-        cups = min([water // WATER, milk // MILK, beans // BEANS])
-        if cups == cups_inp:
-            print('Yes, I can make that amount of coffee')
-        else:
-            print(f'Yes, I can make that amount of coffee (and even {cups - cups_inp} more than that)')
-
-    elif water // WATER < cups_inp and milk // MILK < cups_inp and beans // BEANS >= 1:
-        cups = min([water // WATER, milk // MILK, beans // BEANS])
-        print(f'No, I can make only {cups} cups of coffee')
+    return water, milk, beans, cups, money
 
 
-water_in_machine, milk_in_machine, beans_in_machine = amount()
-making_coffee(water_in_machine, milk_in_machine, beans_in_machine)
+# filling coffee machine with the supplies
+def fill(water, milk, beans, cups, money):
+    water_add = int(input('Write how many ml of water do you want to add:\n'))
+    milk_add = int(input('Write how many ml of milk do you want to add:\n'))
+    beans_add = int(input('Write how many grams of coffee beans do you want to add:\n'))
+    cups_add = int(input('Write how many disposable cups of coffee do you want to add:\n'))
+    money_add = 0
+
+    water += water_add
+    milk += milk_add
+    beans += beans_add
+    cups += cups_add
+    money += money_add
+
+    return water, milk, beans, cups, money
+
+
+# cash collection
+def take(water, milk, beans, cups, money):
+    print(f'I gave you ${money}')
+    money = 0
+
+    return water, milk, beans, cups, money
+
+
+# brewing coffee and updating coffee machine's supplies
+def buy(water, milk, beans, cups, money, beverage):
+    coffee = {'espresso': [250, 0, 16, 4],  # [water, milk, beans, money]
+              'latte': [350, 75, 20, 7],
+              'cappuccino': [200, 100, 12, 6]}
+
+    water -= coffee[beverage][0]
+    milk -= coffee[beverage][1]
+    beans -= coffee[beverage][2]
+    cups -= 1
+    money += coffee[beverage][3]
+
+    return water, milk, beans, cups, money
+
+
+# coffee machine operations logic
+def coffee_machine():
+    water, milk, beans, cups, money = status(water=400, milk=540, beans=120, cups=9, money=550)
+    action = input('\nWrite action (buy, fill, take):\n')
+
+    if action == 'fill':
+        water, milk, beans, cups, money = fill(water, milk, beans, cups, money)
+        print('')
+        status(water, milk, beans, cups, money)
+
+    elif action == 'take':
+        water, milk, beans, cups, money = take(water, milk, beans, cups, money)
+        print('')
+        status(water, milk, beans, cups, money)
+
+    elif action == 'buy':
+        menu = {'1': 'espresso',
+                '2': 'latte',
+                '3': 'cappuccino'}
+
+        choice = input('What do you want to buy? 1 - espresso, 2 - latte, 3 - cappuccino:\n')
+        beverage = menu[choice]
+
+        water, milk, beans, cups, money = buy(water, milk, beans, cups, money, beverage)
+        print('')
+        status(water, milk, beans, cups, money)
+
+
+coffee_machine()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
