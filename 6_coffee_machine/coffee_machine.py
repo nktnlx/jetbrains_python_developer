@@ -1,40 +1,21 @@
 # STAGE 6 (final)
+# STAGE 6 (final)
 class CoffeeMachine:
     water = 400
     milk = 540
     beans = 120
     cups = 9
     money = 550
-
-    # method to brew espresso
-    def espresso(self, water, beans, cups, money):
+    
+    # method to brew a cup of coffee
+    def brew(self, water, milk, beans, cups, money):
         resources = [self.water // water,
-                     self.beans // beans,
-                     self.cups // cups]
-
-        items = ['water', 'beans', 'cups']
-
-        if all(resources):
-            self.water -= water
-            self.beans -= beans
-            self.cups -= cups
-            self.money += money
-            print('I have enough resources, making you a coffee!')
-
-        else:
-            for ind, item in enumerate(resources):
-                if item == 0:
-                    print(f'Sorry, not enough {items[ind]}!')
-
-    # method to brew latte
-    def latte(self, water, milk, beans, cups, money):
-        resources = [self.water // water,
-                     self.milk // milk,
-                     self.beans // beans,
-                     self.cups // cups]
-
-        items = ['water', 'milk', 'beans', 'cups']
-
+                 self.milk // milk if milk != 0 else self.milk,
+                 self.beans // beans,
+                 self.cups // cups]
+        
+        items = ['water', 'milk', 'beans', 'cups']        
+        
         if all(resources):
             self.water -= water
             self.milk -= milk
@@ -42,46 +23,24 @@ class CoffeeMachine:
             self.cups -= cups
             self.money += money
             print('I have enough resources, making you a coffee!')
-
+            
         else:
             for ind, item in enumerate(resources):
                 if item == 0:
                     print(f'Sorry, not enough {items[ind]}!')
-
-    # method to brew cappuccino
-    def cappuccino(self, water, milk, beans, cups, money):
-        resources = [self.water // water,
-                     self.milk // milk,
-                     self.beans // beans,
-                     self.cups // cups]
-
-        items = ['water', 'milk', 'beans', 'cups']
-
-        if all(resources):
-            self.water -= water
-            self.milk -= milk
-            self.beans -= beans
-            self.cups -= cups
-            self.money += money
-            print('I have enough resources, making you a coffee!')
-
-        else:
-            for ind, item in enumerate(resources):
-                if item == 0:
-                    print(f'Sorry, not enough {items[ind]}!')
-
+                    
     # cash collection method
     def take(self):
         print(f'I gave you ${self.money}')
         self.money = 0
-
+    
     # filling coffee machine with the supplies
     def fill(self):
         self.water += int(input('Write how many ml of water do you want to add:\n'))
         self.milk += int(input('Write how many ml of milk do you want to add:\n'))
         self.beans += int(input('Write how many grams of coffee beans do you want to add:\n'))
         self.cups += int(input('Write how many disposable cups of coffee do you want to add:\n'))
-
+    
     # representation method for printing the coffee machine status
     def __repr__(self):
         return f'''\nThe coffee machine has:
@@ -90,7 +49,7 @@ class CoffeeMachine:
 {self.beans} of coffee beans
 {self.cups} of disposable cups
 ${self.money} of money\n'''
-
+        
 
 # function to run the script
 def main():
@@ -113,11 +72,11 @@ def main():
             if choice == 'back':
                 continue
             elif choice == '1':
-                my_machine.espresso(250, 16, 1, 4)
+                my_machine.brew(250, 0, 16, 1, 4)
             elif choice == '2':
-                my_machine.latte(350, 75, 20, 1, 7)
+                my_machine.brew(350, 75, 20, 1, 7)
             elif choice == '3':
-                my_machine.cappuccino(200, 100, 12, 1, 6)
+                my_machine.brew(200, 100, 12, 1, 6)
 
 
         elif action == 'exit':
