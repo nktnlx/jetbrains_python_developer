@@ -11,6 +11,7 @@ List of projects:
 4. Hangman --  is a popular puzzle game. In this version of the game computer hides a word from you and you're trying to guess it letter by letter.  
 5. Tic-Tac-Toe -- is a popular pen and pencil game, also known as Xs and Os. This version of the game is for two players. Players set 'X' or 'O' one after another until one of the players have a straight line (including diagonals). If all cells in a 3x3 field are occupied and no one got a straigft line - it is a tie!  
 6. Coffee Machine -- the project emulates an operation of a coffee machine. During the project I've practiced working with functions, loops and conditions. Also there was an intro to OOP, including: classes, instances, methods, attributes and magic methods.  
+7. Rock-Paper-Scissors -- a playable Rock-Paper-Scissors game, with a Player vs Computer mode. Practiced use of arrays, the Random library, formatted strings, and algorithms.     
 
 
 
