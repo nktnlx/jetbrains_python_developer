@@ -4,14 +4,14 @@ rock_paper_scissors -- a playable Rock-Paper-Scissors game, with a Player vs Com
 
 An example of the script execution:  
 ```
-scissors
-Sorry, but the computer chose rock
-
 paper
 Sorry, but the computer chose scissors
 
 rock
-Sorry, but the computer chose paper
+There is a draw (rock)
+
+scissors
+Well done. The computer chose paper and failed
 ```
 
 
