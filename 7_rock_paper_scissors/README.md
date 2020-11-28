@@ -1,4 +1,4 @@
-This is the forth project completed by me from [JetBrains Python Developer track.](https://hyperskill.org/tracks/2)
+This is the 7th project completed by me from [JetBrains Python Developer track.](https://hyperskill.org/tracks/2)
 
 rock_paper_scissors -- a playable Rock-Paper-Scissors game, with a Player vs Computer mode. Practiced use of arrays, the Random library, formatted strings, and algorithms.   
 

@@ -1,4 +1,4 @@
-This is the forth project completed by me from [JetBrains Python Developer track.](https://hyperskill.org/tracks/2)
+This is the 6th project completed by me from [JetBrains Python Developer track.](https://hyperskill.org/tracks/2)
 
 Coffee Machine -- the project emulates an operation of a coffee machine. During the project I've practiced working with functions, loops and conditions. Also there was an intro to OOP, including: classes, instances, methods, attributes and magic methods.   
 
