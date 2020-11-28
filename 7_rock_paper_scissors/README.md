@@ -4,20 +4,35 @@ rock_paper_scissors -- a playable Rock-Paper-Scissors game, with a Player vs Com
 
 An example of the script execution:  
 ```
-paper
-Sorry, but the computer chose scissors
+Enter your name: Alex
+Hello, Alex
+
+!rating
+Your rating: 400
 
 rock
-There is a draw (rock)
+Sorry, but the computer chose paper
+
+scissors
+Sorry, but the computer chose rock
+
+paper
+Well done. The computer chose rock and failed
+
+paper
+Well done. The computer chose rock and failed
+
+!rating
+Your rating: 600
 
 rokc
 Invalid input
 
-scissors
-There is a draw (scissors)
+rock
+Well done. The computer chose scissors and failed
 
-exit
-Invalid input
+!rating
+Your rating: 700
 
 !exit
 Bye!
