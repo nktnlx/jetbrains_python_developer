@@ -10,8 +10,17 @@ Sorry, but the computer chose scissors
 rock
 There is a draw (rock)
 
+rokc
+Invalid input
+
 scissors
-Well done. The computer chose paper and failed
+There is a draw (scissors)
+
+exit
+Invalid input
+
+!exit
+Bye!
 ```
 
 
