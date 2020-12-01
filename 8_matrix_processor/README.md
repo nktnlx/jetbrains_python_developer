@@ -4,22 +4,17 @@ Numeric Matrix Processor -- how to read and output matrices, do operations on th
 
 An example of the script execution:  
 ```
-4 5
-1 2 3 4 5
-3 2 3 2 1
-8 0 9 9 1
-1 3 4 5 6
+3 3
 
-4 5
-1 1 4 4 5
-4 4 5 7 8
-1 2 3 9 8
-1 0 0 0 1
+1 2 3
+4 5 6
+7 8 9
 
-2 3 7 8 10
-7 6 8 9 9
-9 2 12 18 9
-2 3 4 5 7
+3
+
+3 6 9
+12 15 18
+21 24 27
 ```
 
 
