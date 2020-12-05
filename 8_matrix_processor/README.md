@@ -4,17 +4,62 @@ Numeric Matrix Processor -- how to read and output matrices, do operations on th
 
 An example of the script execution:  
 ```
-3 3
-
+1. Add matrices
+2. Multiply matrix by a constant
+3. Multiply matrices
+0. Exit
+Your choice: 2
+Enter size of matrix: 3 3
+Enter matrix:
 1 2 3
 4 5 6
 7 8 9
+Enter constant: .5
+The result is:
+0.5 1.0 1.5
+2.0 2.5 3.0
+3.5 4.0 4.5
 
-3
+1. Add matrices
+2. Multiply matrix by a constant
+3. Multiply matrices
+0. Exit
+Your choice: 3
+Enter size of first matrix: 3 2
+Enter first matrix:
+1 2
+3 4
+5 6
+Enter size of second matrix: 2 4
+Enter second matrix:
+1 2 3 4
+4 3 2 1
+The result is:
+9.0 8.0 7.0 6.0
+19.0 18.0 17.0 16.0
+29.0 28.0 27.0 26.0
 
-3 6 9
-12 15 18
-21 24 27
+1. Add matrices
+2. Multiply matrix by a constant
+3. Multiply matrices
+0. Exit
+Your choice: 1
+Enter size of first matrix: 3 3
+Enter first matrix:
+1 2 3
+4 5 6
+7 8 9
+Enter size of second matrix: 2 2
+Enter second matrix:
+1 2
+3 4
+The operation cannot be performed.
+
+1. Add matrices
+2. Multiply matrix by a constant
+3. Multiply matrices
+0. Exit
+Your choice: 0
 ```
 
 
