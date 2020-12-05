@@ -7,6 +7,7 @@ An example of the script execution:
 1. Add matrices
 2. Multiply matrix by a constant
 3. Multiply matrices
+4. Transpose matrix
 0. Exit
 Your choice: 2
 Enter size of matrix: 3 3
@@ -23,6 +24,7 @@ The result is:
 1. Add matrices
 2. Multiply matrix by a constant
 3. Multiply matrices
+4. Transpose matrix
 0. Exit
 Your choice: 3
 Enter size of first matrix: 3 2
@@ -42,6 +44,7 @@ The result is:
 1. Add matrices
 2. Multiply matrix by a constant
 3. Multiply matrices
+4. Transpose matrix
 0. Exit
 Your choice: 1
 Enter size of first matrix: 3 3
@@ -58,6 +61,30 @@ The operation cannot be performed.
 1. Add matrices
 2. Multiply matrix by a constant
 3. Multiply matrices
+4. Transpose matrix
+0. Exit
+Your choice: 4
+
+1. Main diagonal
+2. Side diagonal
+3. Vertical line
+4. Horizontal line
+Your choice: 1
+Enter size of matrix: 3 3
+Enter matrix:
+1 7 7 
+6 6 4
+4 2 1
+The result is:
+1.0 6.0 4.0
+7.0 6.0 2.0
+7.0 4.0 1.0
+
+
+1. Add matrices
+2. Multiply matrix by a constant
+3. Multiply matrices
+4. Transpose matrix
 0. Exit
 Your choice: 0
 ```
