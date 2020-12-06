@@ -8,6 +8,7 @@ An example of the script execution:
 2. Multiply matrix by a constant
 3. Multiply matrices
 4. Transpose matrix
+5. Calculate a determinant
 0. Exit
 Your choice: 2
 Enter size of matrix: 3 3
@@ -25,6 +26,7 @@ The result is:
 2. Multiply matrix by a constant
 3. Multiply matrices
 4. Transpose matrix
+5. Calculate a determinant
 0. Exit
 Your choice: 3
 Enter size of first matrix: 3 2
@@ -45,6 +47,7 @@ The result is:
 2. Multiply matrix by a constant
 3. Multiply matrices
 4. Transpose matrix
+5. Calculate a determinant
 0. Exit
 Your choice: 1
 Enter size of first matrix: 3 3
@@ -62,6 +65,7 @@ The operation cannot be performed.
 2. Multiply matrix by a constant
 3. Multiply matrices
 4. Transpose matrix
+5. Calculate a determinant
 0. Exit
 Your choice: 4
 
@@ -80,11 +84,28 @@ The result is:
 7.0 6.0 2.0
 7.0 4.0 1.0
 
+1. Add matrices
+2. Multiply matrix by a constant
+3. Multiply matrices
+4. Transpose matrix
+5. Calculate a determinant
+0. Exit
+Your choice: 5
+Enter size of matrix: 5 5
+Enter matrix:
+0 1 2 3 4
+9 8 3 2 1
+5 4 3 0 2
+3 4 5 7 2
+1 9 8 2 5
+The result is:
+3097.0
 
 1. Add matrices
 2. Multiply matrix by a constant
 3. Multiply matrices
 4. Transpose matrix
+5. Calculate a determinant
 0. Exit
 Your choice: 0
 ```
