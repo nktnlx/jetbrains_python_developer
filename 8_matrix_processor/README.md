@@ -1,6 +1,6 @@
 This is the 8th project completed by me from [JetBrains Python Developer track.](https://hyperskill.org/tracks/2)
 
-Numeric Matrix Processor -- how to read and output matrices, do operations on them, and compute the determinant of a square matrix.    
+Numeric Matrix Processor -- how to read and output matrices, do operations on them (add, multiply, multiply by a constant, transponse), compute the determinant of a square matrix and its inverse.    
 
 An example of the script execution:  
 ```
@@ -9,6 +9,7 @@ An example of the script execution:
 3. Multiply matrices
 4. Transpose matrix
 5. Calculate a determinant
+6. Inverse matrix
 0. Exit
 Your choice: 2
 Enter size of matrix: 3 3
@@ -27,6 +28,7 @@ The result is:
 3. Multiply matrices
 4. Transpose matrix
 5. Calculate a determinant
+6. Inverse matrix
 0. Exit
 Your choice: 3
 Enter size of first matrix: 3 2
@@ -48,6 +50,7 @@ The result is:
 3. Multiply matrices
 4. Transpose matrix
 5. Calculate a determinant
+6. Inverse matrix
 0. Exit
 Your choice: 1
 Enter size of first matrix: 3 3
@@ -66,6 +69,7 @@ The operation cannot be performed.
 3. Multiply matrices
 4. Transpose matrix
 5. Calculate a determinant
+6. Inverse matrix
 0. Exit
 Your choice: 4
 
@@ -89,6 +93,7 @@ The result is:
 3. Multiply matrices
 4. Transpose matrix
 5. Calculate a determinant
+6. Inverse matrix
 0. Exit
 Your choice: 5
 Enter size of matrix: 5 5
@@ -106,6 +111,25 @@ The result is:
 3. Multiply matrices
 4. Transpose matrix
 5. Calculate a determinant
+6. Inverse matrix
+0. Exit
+Your choice: 6
+Enter size of matrix: 3 3
+Enter matrix:
+2 -1 0
+0 1 2
+1 1 0
+The result is:
+0.33 0.0 0.33
+-0.33 0.0 0.67
+0.17 0.5 -0.33
+
+1. Add matrices
+2. Multiply matrix by a constant
+3. Multiply matrices
+4. Transpose matrix
+5. Calculate a determinant
+6. Inverse matrix
 0. Exit
 Your choice: 0
 ```
