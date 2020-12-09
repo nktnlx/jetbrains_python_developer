@@ -7,56 +7,55 @@ An example of the script execution:
 1. Create an account
 2. Log into account
 0. Exit
->1
+1
 
 Your card has been created
 Your card number:
-4000004938320895
+4000004925386108
 Your card PIN:
-6826
+4269
 
 1. Create an account
 2. Log into account
 0. Exit
->2
+2
 
 Enter your card number:
->4000004938320895
+4000004925386108
 Enter your PIN:
->4444
+4444
 
 Wrong card number or PIN!
-
 1. Create an account
 2. Log into account
 0. Exit
->2
+2
 
 Enter your card number:
->4000004938320895
+4000004925386108
 Enter your PIN:
->6826
+4269
 
 You have successfully logged in!
 
 1. Balance
 2. Log out
 0. Exit
->1
+1
 
 Balance: 0
 
 1. Balance
 2. Log out
 0. Exit
->2
+2
 
 You have successfully logged out!
 
 1. Create an account
 2. Log into account
 0. Exit
->0
+0
 
 Bye!
 ```
