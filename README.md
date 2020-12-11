@@ -13,7 +13,7 @@ List of projects:
 6. Coffee Machine -- the project emulates an operation of a coffee machine. During the project I've practiced working with functions, loops and conditions. Also there was an intro to OOP, including: classes, instances, methods, attributes and magic methods.  
 7. Rock-Paper-Scissors -- a playable Rock-Paper-Scissors game, with a Player vs Computer mode. Practiced use of arrays, the random library, formatted strings, and algorithms.  
 8. Numeric Matrix Processor -- how to read and output matrices, do operations on them (add, multiply, multiply by a constant, transponse), compute the determinant of a square matrix and its inverse. Practised recursion, nested lists and indexing.  
-9. Simple Banking System -- a simple banking system with database was developed in this project. Applied Luhn algorithm and learned SQL to complete this project.
+9. Simple Banking System -- a simple banking system with database was developed in this project. Applied Luhn algorithm, learned SQL basics and used sqlite3 module to complete this project.
 
 
 
