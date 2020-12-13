@@ -4,12 +4,57 @@ To-Do List -- To-Do list that will help you manage your tasks. Practiced loops, 
 
 An example of the script execution:  
 ```
-Today:
-1) Do yoga
-2) Make breakfast
-3) Learn basics of SQL
-4) Learn what is ORM
+1) Today's tasks
+2) Add task
+0) Exit
+1
 
+Today:
+Nothing to do!
+
+1) Today's tasks
+2) Add task
+0) Exit
+2
+
+Enter task
+Learn sqlalchemy!  
+The task has been added!
+
+1) Today's tasks
+2) Add task
+0) Exit
+2
+
+Enter task
+Workout
+The task has been added!
+
+1) Today's tasks
+2) Add task
+0) Exit
+2
+
+Enter task
+Read a book
+The task has been added!
+
+1) Today's tasks
+2) Add task
+0) Exit
+1
+
+Today:
+1. Learn sqlalchemy!
+2. Workout
+3. Read a book
+
+1) Today's tasks
+2) Add task
+0) Exit
+0
+
+Bye!
 ```
 
 
