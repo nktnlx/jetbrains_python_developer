@@ -98,6 +98,139 @@
 
 
 # STAGE 3
+# from sqlalchemy import create_engine
+# from sqlalchemy.ext.declarative import declarative_base
+# from sqlalchemy import Column, Integer, String, Date
+# from sqlalchemy.orm import sessionmaker
+# from sqlalchemy import and_
+# from datetime import datetime, timedelta
+#
+# # creating DB file
+# engine = create_engine('sqlite:///todo.db?check_same_thread=False')
+#
+# # creating declarative meta class from which our Tasks class will inherit
+# Base = declarative_base()
+#
+#
+# # creating definition of the table in our Task class (child class to the Base)
+# class Task(Base):
+#     __tablename__ = 'task'
+#     id = Column(Integer, primary_key=True)
+#     task = Column(String, default='')
+#     deadline = Column(Date, default=datetime.today)
+#
+#     def __repr__(self):
+#         return self.task
+#
+#
+# # create a table in our DB
+# Base.metadata.create_all(engine)
+#
+#
+# # creating our TaskList class
+# class TaskList:
+#     def __init__(self):
+#         # creating a session object to access our database
+#         self.Session = sessionmaker(bind=engine)
+#         self.session = self.Session()
+#         self.menu()
+#
+#     # main menu and handling user's choices
+#     def menu(self):
+#         choice = input('''1) Today's tasks
+# 2) Week's tasks
+# 3) All tasks
+# 4) Add task
+# 0) Exit\n''')
+#         if choice == '1':  # Today's tasks
+#             self.today_tasks()
+#         elif choice == '2':  # Week's tasks
+#             self.week_tasks()
+#         elif choice == '3':  # All tasks
+#             self.all_tasks()
+#         elif choice == '4':  # Add task
+#             self.add_task()
+#         elif choice == '0':  # Exit
+#             self.exit()
+#
+#     # printing tasks from database
+#     def today_tasks(self):
+#         rows = self.session.query(Task).all()
+#         today = datetime.today()
+#         print('\nToday', today.day, today.strftime('%b') + ':')
+#         if len(rows) == 0:
+#             print('Nothing to do!\n')
+#             return self.menu()
+#         i = 1
+#         for row in rows:
+#             if row.deadline == today.date():
+#                 print(f'{i}. {row.task}')
+#                 i += 1
+#         if i == 1:
+#             print('Nothing to do!\n')
+#         print('')
+#         self.menu()
+#
+#     # printing all tasks for the next 7 days from today.
+#     def week_tasks(self):
+#         today = datetime.today()
+#         # filtering tasks (today + 7 days)
+#         rows = self.session.query(Task).filter(and_(Task.deadline <= today.date() + timedelta(days=6), Task.deadline >= today.date())).order_by(Task.deadline).all()
+#         # creating an auxiliary lists with the next 7 days and days where we have tasks
+#         all_days_lst = [int(today.strftime('%d')) + _ for _ in range(7)]
+#         task_days_lst = [row.deadline.day for row in rows]
+#         # printing the output formatted as asked by the task
+#         print('')
+#         for i in range(7):
+#             today = datetime.today() + timedelta(days=i)
+#             print(today.strftime('%A %d %b') + ':')
+#             if int(today.strftime('%d')) in task_days_lst:  # checking if we have a task on this day
+#                 i = 1
+#                 for row in rows:
+#                     if row.deadline.day == int(today.strftime('%d')):
+#                         print(f'{i}. {row.task}')
+#                         i += 1
+#                 print('')
+#             else:
+#                 print('Nothing to do!\n')
+#         self.menu()
+#
+#     # printing all tasks from database
+#     def all_tasks(self):
+#         rows = self.session.query(Task).order_by(Task.deadline).all()
+#         if len(rows) == 0:
+#             print('\nAll tasks:')
+#             print('Nothing to do!\n')
+#             self.menu()
+#         else:
+#             print('\nAll tasks:')
+#             i = 1
+#             for row in rows:
+#                 print(f'{i}. {row.task}. {row.deadline.day}', row.deadline.strftime('%b'))
+#                 i += 1
+#             print('')
+#             self.menu()
+#
+#     # adding a task to database
+#     def add_task(self):
+#         task_to_add = input('\nEnter task\n')
+#         task_deadline = input('Enter deadline\n')
+#         new_task = Task(task=task_to_add, deadline=datetime.strptime(task_deadline, '%Y-%m-%d').date(),)
+#         self.session.add(new_task)
+#         self.session.commit()
+#         print('The task has been added!\n')
+#         self.menu()
+#
+#     # exiting the script
+#     def exit(self):
+#         print('\nBye!')
+#         return
+#
+#
+# my_day = TaskList()
+
+
+# STAGE 4
 from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy import Column, Integer, String, Date
@@ -140,7 +273,9 @@ class TaskList:
         choice = input('''1) Today's tasks
 2) Week's tasks
 3) All tasks
-4) Add task
+4) Missed tasks
+5) Add task
+6) Delete task
 0) Exit\n''')
         if choice == '1':  # Today's tasks
             self.today_tasks()
@@ -148,8 +283,12 @@ class TaskList:
             self.week_tasks()
         elif choice == '3':  # All tasks
             self.all_tasks()
-        elif choice == '4':  # Add task
+        elif choice == '4':  # Missed tasks
+            self.missed_tasks()
+        elif choice == '5':  # Add task
             self.add_task()
+        elif choice == '6':  # Delete task
+            self.delete_tasks()
         elif choice == '0':  # Exit
             self.exit()
 
@@ -210,6 +349,38 @@ class TaskList:
                 i += 1
             print('')
             self.menu()
+
+    # printing all tasks whose deadline was missed (deadline date is earlier than today)
+    def missed_tasks(self):
+        today = datetime.today()
+        rows = self.session.query(Task).filter(Task.deadline < today.date()).order_by(Task.deadline).all()
+        print('\nMissed tasks:')
+        if len(rows) == 0:
+            print('Nothing is missed!')
+        else:
+            i = 1
+            for row in rows:
+                print(f'{i}. {row.task}. {row.deadline.day}', row.deadline.strftime('%b'))
+                i += 1
+        print('')
+        self.menu()
+
+    # delete the chosen task
+    def delete_tasks(self):
+        rows = self.session.query(Task).order_by(Task.deadline).all()
+        if len(rows) == 0:
+            print('\nNothing to delete!')
+        else:
+            print('\nChoose the number of the task you want to delete:')
+            for i in range(1, len(rows)+1):
+                print(f'{i}. {rows[i - 1].task}. {rows[i - 1].deadline.day}', rows[i - 1].deadline.strftime('%b'))
+            del_choice = int(input())
+            row_to_del = rows[del_choice - 1]  # -1 because zero-indexing in python
+            self.session.delete(row_to_del)
+            self.session.commit()
+            print('The task has been deleted!')
+        print('')
+        self.menu()
 
     # adding a task to database
     def add_task(self):
