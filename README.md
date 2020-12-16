@@ -14,7 +14,8 @@ List of projects:
 7. Rock-Paper-Scissors -- a playable Rock-Paper-Scissors game, with a Player vs Computer mode. Practiced use of arrays, the random library, formatted strings, and algorithms.  
 8. Numeric Matrix Processor -- how to read and output matrices, do operations on them (add, multiply, multiply by a constant, transponse), compute the determinant of a square matrix and its inverse. Practised recursion, nested lists and indexing.  
 9. Simple Banking System -- a simple banking system with database was developed in this project. Applied Luhn algorithm, learned SQL basics and used sqlite3 module to complete this project.
-10. To-Do List -- practiced loops, conditions and statements. Also learned the basics of SQLAlchemy to manage SQLite database on Python. The project was built using OOP.     
+10. To-Do List -- practiced loops, conditions and statements. Also learned the basics of SQLAlchemy to manage SQLite database on Python. The project was built using OOP.   
+11. Regex Engine -- wrote an extendable regex engine that can handle basic regex syntax, including literals (a, b, c, etc.), wild-cards (.), and metacharacters (?, +, ^, $). Learned about the regex syntax, practiced working with parsing and slicing, and got more familiar with boolean algebra and recursion.      
 
 
 
