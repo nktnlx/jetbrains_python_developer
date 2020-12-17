@@ -4,7 +4,7 @@ Regex Engine -- In this project, you will write an extendable regex engine that 
 
 An example of the script execution:  
 ```
-1Input: 'a|a'     Output: True
+Input: 'a|a'     Output: True
 Input: '.|a'     Output: True
 Input:  '|a'     Output: True
 Input:  '|'      Output: True
@@ -15,7 +15,7 @@ Input: 'a|'      Output: False
 
 The code was created using Python 3.8  
 If your machine has an installed Python 3, you can run the code in terminal(command line):  
-$ python3 todolist.py  
+$ python3 regex.py  
 
 
 --------------------------------------------
