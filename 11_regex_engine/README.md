@@ -4,11 +4,11 @@ Regex Engine -- In this project, you will write an extendable regex engine that 
 
 An example of the script execution:  
 ```
-Input: 'a|a'     Output: True
-Input: '.|a'     Output: True
-Input:  '|a'     Output: True
-Input:  '|'      Output: True
-Input: 'a|'      Output: False
+Input: 'apple|apple'     Output: True
+Input: '.pple|apple'     Output: True
+Input: 'appl.|apple'     Output: True
+Input: '.....|apple'     Output: True
+Input: 'peach|apple'     Output: False
 
 ```
 
