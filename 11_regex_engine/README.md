@@ -5,9 +5,11 @@ Regex Engine -- In this project, you will write an extendable regex engine that 
 An example of the script execution:  
 ```
 Input: 'apple|apple'     Output: True
-Input: '.pple|apple'     Output: True
-Input: 'appl.|apple'     Output: True
-Input: '.....|apple'     Output: True
+Input:    'ap|apple'     Output: True
+Input:    'le|apple'     Output: True
+Input:     'a|apple'     Output: True
+Input:     '.|apple'     Output: True
+Input: 'apwle|apple'     Output: False
 Input: 'peach|apple'     Output: False
 
 ```
