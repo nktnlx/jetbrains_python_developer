@@ -4,13 +4,17 @@ Regex Engine -- In this project, you will write an extendable regex engine that 
 
 An example of the script execution:  
 ```
-Input: 'apple|apple'     Output: True
-Input:    'ap|apple'     Output: True
-Input:    'le|apple'     Output: True
-Input:     'a|apple'     Output: True
-Input:     '.|apple'     Output: True
-Input: 'apwle|apple'     Output: False
-Input: 'peach|apple'     Output: False
+Input:    '^app|apple'           Output: True
+Input:     'le$|apple'           Output: True
+Input:      '^a|apple'           Output: True
+Input:      '.$|apple'           Output: True
+Input:  'apple$|tasty apple'     Output: True
+Input:  '^apple|apple pie'       Output: True
+Input: '^apple$|apple'           Output: True
+Input: '^apple$|tasty apple'     Output: False
+Input: '^apple$|apple pie'       Output: False
+Input:    'app$|apple'           Output: False
+Input:     '^le|apple'           Output: False
 
 ```
 
