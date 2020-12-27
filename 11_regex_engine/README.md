@@ -1,20 +1,15 @@
 This is the 11th project completed by me from [JetBrains Python Developer track.](https://hyperskill.org/tracks/2)
 
-Regex Engine -- In this project, you will write an extendable regex engine that can handle basic regex syntax, including literals (a, b, c, etc.), wild-cards (.), and metacharacters (?, +, ^, $). Learned about the regex syntax, practiced working with parsing and slicing, and got more familiar with boolean algebra and recursion.   
+Regex Engine -- In this project, I've coded a regex engine that can handle basic regex syntax, including literals (a, b, c, etc.), wild-cards (.), and metacharacters (?, +, ^, $). Learned about the regex syntax, practiced working with parsing and slicing, and got more familiar with boolean algebra and recursion.   
 
 An example of the script execution:  
 ```
-Input: 'colou?r|color'       Output: True
-Input: 'colou?r|colour'      Output: True
-Input: 'colou?r|colouur'     Output: False
-Input: 'colou*r|color'       Output: True
-Input: 'colou*r|colour'      Output: True
-Input: 'colou*r|colouur'     Output: True
-Input:  'col.*r|color'       Output: True
-Input:  'col.*r|colour'      Output: True
-Input:  'col.*r|colr'        Output: True
-Input:  'col.*r|collar'      Output: True
-Input: 'col.*r$|colors'      Output: False
+Input:      '\.$|end.'              Output: True
+Input:     '3\+3|3+3=6'             Output: True
+Input:       '\?|Is this working?'  Output: True
+Input:       '\\|\'                 Output: True
+Input: 'colou\?r|color'             Output: False
+Input: 'colou\?r|colour'            Output: False
 
 ```
 
