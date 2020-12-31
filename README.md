@@ -1,7 +1,7 @@
 Hi there!
 
 
-I'm intensively learning to code and interested in data science, aiming to be hired by the end of 2020.  
+I'm intensively learning to code and interested in data science, aiming to be hired by mid of 2021.  
 This repository is for completed projects from [JetBrains Python Developer track.](https://hyperskill.org/tracks/2)  
 
 List of projects:
@@ -15,7 +15,8 @@ List of projects:
 8. Numeric Matrix Processor -- how to read and output matrices, do operations on them (add, multiply, multiply by a constant, transponse), compute the determinant of a square matrix and its inverse. Practised recursion, nested lists and indexing.  
 9. Simple Banking System -- a simple banking system with database was developed in this project. Applied Luhn algorithm, learned SQL basics and used sqlite3 module to complete this project.
 10. To-Do List -- practiced loops, conditions and statements. Also learned the basics of SQLAlchemy to manage SQLite database on Python. The project was built using OOP.   
-11. Regex Engine -- wrote an extendable regex engine that can handle basic regex syntax, including literals (a, b, c, etc.), wild-cards (.), and metacharacters (?, +, ^, $). Learned about the regex syntax, practiced working with parsing and slicing, and got more familiar with boolean algebra and recursion.      
+11. Regex Engine -- wrote an extendable regex engine that can handle basic regex syntax, including literals (a, b, c, etc.), wild-cards (.), and metacharacters (?, +, ^, $). Learned about the regex syntax, practiced working with parsing and slicing, and got more familiar with boolean algebra and recursion.  
+12. Smart Calculator -- coded a calculator that not only adds, subtracts, and multiplies, but is also smart enough to remember your previous calculations. Extensively used lists, strings and dictionaries. Also got some experience with 2 important data structures: the stack and the queue.   
 
 
 
