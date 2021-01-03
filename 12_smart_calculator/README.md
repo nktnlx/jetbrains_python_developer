@@ -4,8 +4,15 @@ Smart Calculator -- coded a calculator that not only adds, subtracts, and multip
 
 An example of the script execution:  
 ```
-> 5 8
-13
+> 17 9
+26
+> -2 5
+3
+
+> 7
+7
+> /exit
+Bye!
 ```
 
 
