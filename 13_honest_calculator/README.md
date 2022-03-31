@@ -24,6 +24,6 @@ $ python3 honest_calc.py
 
 
 --------------------------------------------
-Feel free to contact me via nktn.lx@gmal.com or LinkedIn: @nktnlx
-Follow me on twitter: @nktn_lx  
-And here on github: github.com/nktnlx  
+Feel free to contact me via nktn.lx@gmal.com or LinkedIn: [@nktnlx](https://www.linkedin.com/in/nktnlx)    
+Follow me on Twitter: [@nktn_lx](https://twitter.com/nktn_lx)    
+And here on github: [nkntlx](https://github.com/nktnlx)  
