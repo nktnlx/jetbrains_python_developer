@@ -11,10 +11,11 @@ Enter an equation
 > 3 n 3
 Yes ... an interesting math operation. You've slept through all classes, haven't you?
 Enter an equation
-> m - 2
-Do you know what the numbers are? Stay focused!
+> 4 / 0
+Yeah... division by zero. Smart move...
 Enter an equation
-> 4.7 * 5.2
+> 4 * 5.2
+20.8
 ```
 
 
