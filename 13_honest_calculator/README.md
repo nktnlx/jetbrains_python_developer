@@ -1,6 +1,6 @@
 This is the 1st project completed by me from [JetBrains Natural Language Processing track.](https://hyperskill.org/tracks/10)
 
-Honest Calculator -- working on the project, you're at first required to build a simple calculator which later on is going to motivate users to try and do the math themselves by becoming more and more honest with them.  
+Honest Calculator -- working on the project, you're at first required to build a simple calculator which later on is going to motivate users to try and do the math themselves by becoming more and more honest with them.   
 
 An example of the script execution:  
 ```
@@ -38,8 +38,10 @@ Do you want to store the result? (y / n):
 n
 Do you want to continue calculations? (y / n):
 n
-```
+```  
 
+The code implements the flowchart below:
+![flowchart pic](https://ucarecdn.com/5a9953cf-380a-4a12-a88b-bb45edd5e890/)
 
 The code was created using Python 3.8  
 If your machine has an installed Python 3, you can run the code in terminal(command line):  
