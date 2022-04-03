@@ -5,17 +5,19 @@ Honest Calculator -- working on the project, you're at first required to build a
 An example of the script execution:  
 ```
 Enter an equation
-> 2 + m
-Do you even know what numbers are? Stay focused!
+> 3 + 3
+6
+Do you want to store the result? (y / n):
+>y
+Do you want to continue calculations? (y / n):
+>y
 Enter an equation
-> 3 n 3
-Yes ... an interesting math operation. You've slept through all classes, haven't you?
-Enter an equation
-> 4 / 0
-Yeah... division by zero. Smart move...
-Enter an equation
-> 4 * 5.2
-20.8
+> 5 + M
+11
+Do you want to store the result? (y / n):
+>y
+Do you want to continue calculations? (y / n):
+>n
 ```
 
 
