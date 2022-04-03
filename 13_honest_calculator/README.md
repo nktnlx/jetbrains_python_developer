@@ -5,25 +5,39 @@ Honest Calculator -- working on the project, you're at first required to build a
 An example of the script execution:  
 ```
 Enter an equation
-> 2 / M
+2 + 3
 You are ... lazy
-Yeah... division by zero. Smart move...
-Enter an equation
-> 1 * M
-You are ... lazy ... very lazy ... very, very lazy
-0.0
+5.0
 Do you want to store the result? (y / n):
-> n
+y
+Are you sure? It is only one digit! (y / n)
+y
+Don't be silly, it's just one number! Add to the memory? (y / n)
+n
 Do you want to continue calculations? (y / n):
-> y
+y
 Enter an equation
-> 899 * 0
-You are ... very, very lazy
-0.0
+5 + M
+You are ... lazy ... very, very lazy
+5.0
 Do you want to store the result? (y / n):
-> n
+y
+Are you sure? It is only one digit! (y / n)
+y
+Don't be silly, it's just one number! Add to memory? (y / n)
+y
+Last chance! Do you really want to embarrass yourself? (y / n)
+y
 Do you want to continue calculations? (y / n):
-> n
+y
+Enter an equation
+M / M
+You are ... lazy
+1.0
+Do you want to store the result? (y / n):
+n
+Do you want to continue calculations? (y / n):
+n
 ```
 
 
