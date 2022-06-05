@@ -17,7 +17,8 @@ List of projects:
 10. To-Do List -- practiced loops, conditions and statements. Also learned the basics of SQLAlchemy to manage SQLite database on Python. The project was built using OOP.   
 11. Regex Engine -- wrote an extendable regex engine that can handle basic regex syntax, including literals (a, b, c, etc.), wild-cards (.), and metacharacters (?, +, ^, $). Learned about the regex syntax, practiced working with parsing and slicing, and got more familiar with boolean algebra and recursion.  
 12. Smart Calculator -- coded a calculator that not only adds, subtracts, and multiplies, but is also smart enough to remember your previous calculations. Extensively used lists, strings and dictionaries. Also got some experience with 2 important data structures: the stack and the queue.   
-13. Honest Calculator -- working on the project, you're at first required to build a simple calculator which later on is going to motivate users to try and do the math themselves by becoming more and more honest with them.  
+13. Honest Calculator -- working on the project, you're at first required to build a simple calculator which later on is going to motivate users to try and do the math themselves by becoming more and more honest with them. 
+14. Generating Randomness -- Everyone knows that people are bad at generating random things. In this project, we will check this assumption using a small program that will predict "random" user actions. This project will teach you to work with dictionaries and lists, as well as with simple predictive models. 
 
 
 
